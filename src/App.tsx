@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import HeaderComponent from "./components/Header/Header";
+import SidebarComponent from "./components/Sidebar/Sidebar";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,7 +11,11 @@ function App() {
       <HeaderComponent onMenuToggle={() => setMenuOpen((o) => !o)} />
 
       <div className="layout">
-        {menuOpen && <aside className="sidebar">Sidebar</aside>}
+        {menuOpen && (
+          <aside className="sidebar">
+            <SidebarComponent />
+          </aside>
+        )}
         <main className="main">
           <h1>This is a new header</h1>
           <p>

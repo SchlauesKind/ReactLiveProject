@@ -1,15 +1,7 @@
-import styles from './Sidebar.module.css';
+import styles from "./Sidebar.module.css";
 
-function Sidebar() {
-  return (
-    <aside className={styles.sidebar}>
-      <ul>
-        <li>Edit</li>
-        <li>Delete</li>
-        <li>Share</li>
-      </ul>
-    </aside>
-  );
+function SidebarComponent() {
+  return <aside className={styles.sidebar}></aside>;
 }
 
-export default Sidebar;
+export default SidebarComponent;
