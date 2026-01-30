@@ -1,6 +1,6 @@
-import './App.css';
-import { useState } from 'react';
-import HeaderComponent from './components/Header/Header';
+import "./App.css";
+import { useState } from "react";
+import HeaderComponent from "./components/Header/Header";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ function App() {
       <div className="layout">
         {menuOpen && <aside className="sidebar">Sidebar</aside>}
         <main className="main">
-          <h1>Hello</h1>
+          <h1>This is a new header</h1>
         </main>
       </div>
     </>
