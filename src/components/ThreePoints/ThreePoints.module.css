@@ -1,0 +1,25 @@
+.menuButton {
+  background: transparent;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.imageOfMenu {
+  width: 24px;
+  height: 24px;
+}
+
+/*
+TODO:
+--exclude from header -> shouldnt break it
+--add styles for the actual button -> fit it into header
+--add styles for the actual menu -> should become petty :) 
+--menu shouldnt owerlap
+*/

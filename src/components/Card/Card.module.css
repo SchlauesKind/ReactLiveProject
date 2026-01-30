@@ -1,0 +1,15 @@
+div.card {
+  margin: 5px;
+  padding: 2px;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: antiquewhite;
+}
+
+h3.card {
+  text-decoration: underline;
+}
+
+p.card {
+  color: blue;
+}
