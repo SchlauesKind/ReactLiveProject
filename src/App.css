@@ -19,3 +19,8 @@ body {
 .sidebar {
   transition: transform 0.3s ease;
 }
+
+span {
+  color: rgb(234, 0, 255);
+  text-decoration: line-through;
+}
