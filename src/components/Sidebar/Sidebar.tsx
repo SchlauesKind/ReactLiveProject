@@ -1,15 +1,28 @@
-import styles from './Sidebar.module.css';
+import styles from "./Sidebar.module.css";
 
-function Sidebar() {
+function SidebarComponent({ isOpen }: { isOpen: boolean }) {
   return (
-    <aside className={styles.sidebar}>
+    <aside className={`${styles.sidebar} ${isOpen ? styles.expanded : ""}`}>
+      <h2>Sidebar Menu</h2>
       <ul>
-        <li>Edit</li>
-        <li>Delete</li>
-        <li>Share</li>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">4</a>
+        </li>
+        <li>
+          <a href="#">5</a>
+        </li>
       </ul>
     </aside>
   );
 }
 
-export default Sidebar;
+export default SidebarComponent;
