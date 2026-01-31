@@ -1,23 +1,10 @@
-import styles from './Header.module.css';
-import logo from '../../assets/gettingStartedLogo.jpg';
-import MenuButton from '../ThreePoints/ThreePoints';
+import styles from "./Header.module.css";
+import flex_styles from "../../styles/FlexContainer.module.css";
 
-type HeaderProps = {
-  onMenuToggle: () => void;
-};
-
-function HeaderComponent({ onMenuToggle }: HeaderProps) {
+function HeaderComponent() {
   return (
-    <header className={styles.flexContainer}>
-      <MenuButton className={styles.item} onClick={onMenuToggle} />
-
-      <img
-        className={`${styles.item} ${styles.logo}`}
-        src={logo}
-        alt="an image"
-      />
-
-      <h2 className={styles.item}>Header</h2>
+    <header className={`${styles.header} ${flex_styles.flexContainer}`}>
+      Content will be added soon. This component is Header
     </header>
   );
 }
