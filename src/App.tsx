@@ -9,7 +9,7 @@ function App() {
         <SidebarComponent />
         <main className="main">
           <HeaderComponent />
-          Main content goes here. Lol
+          Main content goes here. Lol it is working!
         </main>
       </div>
     </>
