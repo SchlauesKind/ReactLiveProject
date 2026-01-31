@@ -1,0 +1,17 @@
+.flexContainer {
+  /* Flex properties */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 5px;
+  align-items: center;
+}
+
+.flexContainer .item {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: auto;
+  height: calc(100% - 5px);
+  margin-right: 5px;
+}
