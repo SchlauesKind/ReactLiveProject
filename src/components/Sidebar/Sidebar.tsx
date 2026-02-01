@@ -1,7 +1,8 @@
-import apple_icon from "../../assets/apple_icon.png";
+import { NavLink } from "react-router-dom";
 import cheese_icon from "../../assets/cheese_icon.png";
-import styles from "./Sidebar.module.css";
+import apple_icon from "../../assets/apple_icon.png";
 import flex_styles from "../../styles/FlexContainer.module.css";
+import styles from "./Sidebar.module.css";
 
 function SidebarComponent() {
   return (
@@ -24,10 +25,24 @@ function SidebarComponent() {
       </div>
       <ul>
         <li>
-          <a href="#">1 Link will be added soon</a>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `${styles.navLink} ${isActive ? styles.active : ""}`
+            }
+          >
+            Homepage
+          </NavLink>
         </li>
         <li>
-          <a href="#">2 Link will be added soon</a>
+          <NavLink
+            to="/badminton"
+            className={({ isActive }) =>
+              `${styles.navLink} ${isActive ? styles.active : ""}`
+            }
+          >
+            DBV - Badminton
+          </NavLink>
         </li>
         <li>
           <a href="#">3 Link will be added soon</a>

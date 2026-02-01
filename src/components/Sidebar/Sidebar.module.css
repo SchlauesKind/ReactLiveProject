@@ -44,7 +44,8 @@
   cursor: pointer;
 }
 
-.sidebar ul li a {
+.sidebar ul li .navLink {
+  display: block;
   padding: 0.5rem 1rem;
   color: var(--sidebar-text-color);
   text-decoration: none;
@@ -59,4 +60,10 @@
   justify-content: center;
   flex-direction: row;
   background-color: white;
+}
+
+.active {
+  background-color: var(--sidebar-accent-color);
+  color: var(--sidebar-bg-color);
+  font-weight: bold;
 }
